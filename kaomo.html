@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kaomojis Animados</title>
+  
+  <!-- Google Fonts: Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0D1823;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #phone-screen {
+      width: 375px;
+      height: 667px;
+      background-color: #0D1823;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #333;
+    }
+
+    .kaomoji {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 2rem;
+      color: white;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    /* Kaomojis individuales */
+
+    .k1 {
+      top: 5%;
+      left: -100px;
+      animation: moveRight 5s linear infinite;
+      animation-delay: 0s;
+    }
+
+    .k2 {
+      top: 15%;
+      left: 100%;
+      animation: moveLeft 4s linear infinite;
+      animation-delay: 0.5s;
+    }
+
+    .k3 {
+      top: 30%;
+      left: -100px;
+      animation: moveRight 6s linear infinite;
+      animation-delay: 1s;
+    }
+
+    .k4 {
+      top: 45%;
+      left: 100%;
+      animation: moveLeft 5.5s linear infinite;
+      animation-delay: 1.5s;
+    }
+
+    .k5 {
+      top: 60%;
+      left: -100px;
+      animation: moveRight 5.5s linear infinite;
+      animation-delay: 2s;
+    }
+
+    .k6 {
+      top: 70%;
+      left: 100%;
+      animation: moveLeft 6s linear infinite;
+      animation-delay: 2.5s;
+    }
+
+    .k7 {
+      top: 80%;
+      left: -100px;
+      animation: moveRight 6.5s linear infinite;
+      animation-delay: 3s;
+    }
+
+    .k8 {
+      top: 90%;
+      left: 100%;
+      animation: moveLeft 4.5s linear infinite;
+      animation-delay: 3.5s;
+    }
+
+    .k9 {
+      top: 95%;
+      left: -100px;
+      animation: moveRight 7s linear infinite;
+      animation-delay: 4s;
+    }
+
+    /* Animaciones */
+    @keyframes moveRight {
+      0% { left: -150px; }
+      100% { left: 100%; }
+    }
+
+    @keyframes moveLeft {
+      0% { left: 100%; }
+      100% { left: -150px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="phone-screen">
+    <div class="kaomoji k1">(ノ^_^)ノ</div>
+    <div class="kaomoji k2">ヽ(•‿•)ノ</div>
+    <div class="kaomoji k3">ヘ( ^o^)ヘ</div>
+    <div class="kaomoji k4">(づ｡◕‿‿◕｡)づ</div>
+    <div class="kaomoji k5">(*＾▽＾)／</div>
+    <div class="kaomoji k6">＼(＾▽＾)／</div>
+    <div class="kaomoji k7">ヾ(≧▽≦*)o</div>
+    <div class="kaomoji k8">(〜￣▽￣)〜</div>
+    <div class="kaomoji k9">(* >ω<)</div>
+  </div>
+</body>
+</html>
